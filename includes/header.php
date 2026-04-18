@@ -19,8 +19,8 @@
 </head>
 
 <body>
-    <div class="min-h-screen flex flex-col bg-background">
-        <header class="fixed inset-x-0 top-0 z-50 transition-all duration-300 bg-background/85 backdrop-blur-md border-b border-border shadow-[var(--shadow-card)]">
+    <div class="min-h-screen bg-background">
+        <header class="fixed inset-x-0 top-0 z-50 transition-all duration-300 bg-background/85 backdrop-blur-md border-b border-border">
             <nav class="container-wide flex h-20 items-center justify-between">
                 <a class="flex items-center gap-2 group active" href="/">
                     <img src="/assets/images/main-logo.svg" alt="Shyam Interiors" class="h-10 w-auto">
@@ -37,9 +37,6 @@
                     </li>
                     <li>
                         <a href="/portfolio" class="text-sm font-medium text-foreground/80 hover:text-primary transition-colors">Portfolio</a>
-                    </li>
-                    <li>
-                        <a href="/blog" class="text-sm font-medium text-foreground/80 hover:text-primary transition-colors">Blog</a>
                     </li>
                     <li>
                         <a href="/contact" class="text-sm font-medium text-foreground/80 hover:text-primary transition-colors">Contact</a>
@@ -78,9 +75,6 @@
                         <a href="/portfolio" class="nav-link block py-3 text-base font-medium text-foreground hover:text-primary transition-colors">Portfolio</a>
                     </li>
                     <li>
-                        <a href="/blog" class="nav-link block py-3 text-base font-medium text-foreground hover:text-primary transition-colors">Blog</a>
-                    </li>
-                    <li>
                         <a href="/contact" class="nav-link block py-3 text-base font-medium text-foreground hover:text-primary transition-colors">Contact</a>
                     </li>
                     <li class="pt-2">
@@ -91,4 +85,4 @@
                 </ul>
             </div>
         </header>
-        <main class="flex-1">
+        <main class="pt-20">
