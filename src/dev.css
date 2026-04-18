@@ -49,6 +49,8 @@
 
   --color-gold: oklch(0.78 0.11 80);                 /* warm accent */
   
+  --color-card: oklch(100% 0 0);
+
   --color-background: oklch(0.99 0.005 95);          /* warm off-white */
   --color-foreground: oklch(0.22 0.04 245);
   

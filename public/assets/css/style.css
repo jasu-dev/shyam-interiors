@@ -6,7 +6,9 @@
     --font-sans: "Figtree", ui-sans-serif, system-ui, sans-serif;
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-white: #fff;
     --spacing: 0.25rem;
+    --container-md: 28rem;
     --container-xl: 36rem;
     --container-2xl: 42rem;
     --text-xs: 0.75rem;
@@ -48,6 +50,7 @@
     --color-primary-foreground: oklch(0.99 0.005 95);
     --color-secondary: oklch(0.22 0.04 245);
     --color-secondary-foreground: oklch(0.98 0.005 95);
+    --color-card: oklch(100% 0 0);
     --color-background: oklch(0.99 0.005 95);
     --color-foreground: oklch(0.22 0.04 245);
     --color-muted: oklch(0.96 0.008 90);
@@ -332,6 +335,9 @@
   .h-20 {
     height: calc(var(--spacing) * 20);
   }
+  .h-25 {
+    height: calc(var(--spacing) * 25);
+  }
   .h-64 {
     height: calc(var(--spacing) * 64);
   }
@@ -343,6 +349,9 @@
   }
   .max-h-0 {
     max-height: calc(var(--spacing) * 0);
+  }
+  .max-h-96 {
+    max-height: calc(var(--spacing) * 96);
   }
   .min-h-screen {
     min-height: 100vh;
@@ -365,6 +374,9 @@
   .w-12 {
     width: calc(var(--spacing) * 12);
   }
+  .w-20 {
+    width: calc(var(--spacing) * 20);
+  }
   .w-auto {
     width: auto;
   }
@@ -374,11 +386,20 @@
   .max-w-2xl {
     max-width: var(--container-2xl);
   }
+  .max-w-md {
+    max-width: var(--container-md);
+  }
   .max-w-xl {
     max-width: var(--container-xl);
   }
   .flex-1 {
     flex: 1;
+  }
+  .cursor-pointer {
+    cursor: pointer;
+  }
+  .grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
   }
   .grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -514,6 +535,9 @@
       background-color: color-mix(in oklab, var(--color-background) 85%, transparent);
     }
   }
+  .bg-card {
+    background-color: var(--color-card);
+  }
   .bg-muted\/40 {
     background-color: color-mix(in srgb, oklch(0.96 0.008 90) 40%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
@@ -561,6 +585,9 @@
     @supports (color: color-mix(in lab, red, red)) {
       background-color: color-mix(in oklab, var(--color-secondary) 70%, transparent);
     }
+  }
+  .bg-white {
+    background-color: var(--color-white);
   }
   .bg-gradient-to-r {
     --tw-gradient-position: to right in oklab;
@@ -620,6 +647,9 @@
   .p-2 {
     padding: calc(var(--spacing) * 2);
   }
+  .p-3 {
+    padding: calc(var(--spacing) * 3);
+  }
   .p-6 {
     padding: calc(var(--spacing) * 6);
   }
@@ -664,6 +694,9 @@
   }
   .py-6 {
     padding-block: calc(var(--spacing) * 6);
+  }
+  .py-10 {
+    padding-block: calc(var(--spacing) * 10);
   }
   .py-16 {
     padding-block: calc(var(--spacing) * 16);
@@ -812,6 +845,9 @@
       color: color-mix(in oklab, var(--color-secondary-foreground) 85%, transparent);
     }
   }
+  .text-white {
+    color: var(--color-white);
+  }
   .uppercase {
     text-transform: uppercase;
   }
@@ -823,6 +859,9 @@
   }
   .opacity-30 {
     opacity: 30%;
+  }
+  .opacity-100 {
+    opacity: 100%;
   }
   .shadow-\[var\(--shadow-card\)\] {
     --tw-shadow: var(--shadow-card);

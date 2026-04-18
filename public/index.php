@@ -1,19 +1,36 @@
 <?php
 include '../includes/header.php';
 ?>
-
-<section class="relative min-h-screen flex items-center text-secondary-foreground overflow-hidden"><img src="/assets/hero-living-BCBK-Wn2.jpg" alt="Modern luxury living room with floor-to-ceiling windows" class="absolute inset-0 h-full w-full object-cover">
+<!--Hero section-->
+<section class="relative min-h-screen flex items-center text-secondary-foreground overflow-hidden">
+    <img src="/assets/images/hero-bg.jpg" alt="Modern luxury living room with floor-to-ceiling windows" class="absolute inset-0 h-full w-full object-cover">
     <div class="absolute inset-0 bg-gradient-to-r from-secondary/85 via-secondary/65 to-secondary/30"></div>
     <div class="container-wide relative pt-32 pb-20">
-        <div class="max-w-2xl fade-in-up"><span class="inline-block text-xs font-medium tracking-[0.25em] uppercase text-primary-foreground/90 bg-primary/80 backdrop-blur px-4 py-1.5 rounded-full mb-6">Premium Interior Design Studio</span>
-            <h1 class="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-[1.05] text-secondary-foreground">Transform Your <span class="text-primary">Space</span>.<br>Elevate Your Story.</h1>
-            <p class="mt-6 text-base md:text-lg text-secondary-foreground/85 max-w-xl leading-relaxed">We design timeless, considered interiors — for the way you actually live and work. From concept to keys, every detail is crafted with care.</p>
-            <div class="mt-8 flex flex-wrap gap-3"><a href="/contact" class="inline-flex items-center gap-2 rounded-full bg-primary px-7 py-3.5 text-sm font-medium text-primary-foreground hover:bg-primary/90 transition-all hover:shadow-[var(--shadow-elegant)] hover:-translate-y-0.5">Start Your Project <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right h-4 w-4" aria-hidden="true">
+        <div class="max-w-2xl fade-in-up">
+            <span class="inline-block text-xs font-medium tracking-[0.25em] uppercase text-primary-foreground/90 bg-primary/80 backdrop-blur px-4 py-1.5 rounded-full mb-6">
+                Premium Interior Design Studio
+            </span>
+            <h1 class="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-[1.05] text-secondary-foreground">
+                Transform Your <span class="text-primary">Space</span>.<br>Elevate Your Story.
+            </h1>
+            <p class="mt-6 text-base md:text-lg text-secondary-foreground/85 max-w-xl leading-relaxed">
+                We design timeless, considered interiors — for the way you actually live and work. From concept to keys, every detail is crafted with care.
+            </p>
+            <div class="mt-8 flex flex-wrap gap-3">
+                <a href="/contact" class="inline-flex items-center gap-2 rounded-full bg-primary px-7 py-3.5 text-sm font-medium text-primary-foreground hover:bg-primary/90 transition-all hover:shadow-[var(--shadow-elegant)] hover:-translate-y-0.5">
+                    Start Your Project
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right h-4 w-4" aria-hidden="true">
                         <path d="M5 12h14"></path>
                         <path d="m12 5 7 7-7 7"></path>
-                    </svg></a><a href="/portfolio" class="inline-flex items-center gap-2 rounded-full border border-secondary-foreground/30 backdrop-blur bg-secondary-foreground/5 px-7 py-3.5 text-sm font-medium text-secondary-foreground hover:bg-secondary-foreground/15 transition-all">View Portfolio</a></div>
+                    </svg>
+                </a>
+                <a href="/portfolio" class="inline-flex items-center gap-2 rounded-full border border-secondary-foreground/30 backdrop-blur bg-secondary-foreground/5 px-7 py-3.5 text-sm font-medium text-secondary-foreground hover:bg-secondary-foreground/15 transition-all">
+                    View Portfolio
+                </a>
+            </div>
         </div>
     </div>
+    <!--Stats section -->
     <div class="absolute bottom-0 inset-x-0 hidden md:block">
         <div class="container-wide pb-8">
             <div class="grid grid-cols-3 gap-px bg-secondary-foreground/15 rounded-2xl overflow-hidden backdrop-blur-md border border-secondary-foreground/15">
@@ -33,89 +50,147 @@ include '../includes/header.php';
         </div>
     </div>
 </section>
+<!--About section-->
 <section class="py-20 md:py-28">
     <div class="container-wide grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-        <div><span class="text-xs font-medium tracking-[0.2em] uppercase text-primary">Who We Are</span>
-            <h2 class="font-display text-3xl md:text-4xl lg:text-5xl mt-3 leading-tight">A studio devoted to interiors that age beautifully.</h2>
-            <p class="mt-5 text-muted-foreground leading-relaxed">Shyam Interiors is a multidisciplinary design studio working across residential, commercial, and hospitality projects. We combine architectural rigor with a love for material, light, and craft — designing spaces that feel inevitable.</p><a href="/about" class="inline-flex items-center gap-2 mt-7 text-sm font-medium text-primary hover:gap-3 transition-all">Learn more about us <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right h-4 w-4" aria-hidden="true">
+        <div>
+            <span class="text-xs font-medium tracking-[0.2em] uppercase text-primary">Who We Are</span>
+            <h2 class="font-display text-3xl md:text-4xl lg:text-5xl mt-3 leading-tight">
+                A studio devoted to interiors that age beautifully.
+            </h2>
+            <p class="mt-5 text-muted-foreground leading-relaxed">
+                Shyam Interiors is a multidisciplinary design studio working across residential, commercial, and hospitality projects. We combine architectural rigor with a love for material, light, and craft — designing spaces that feel inevitable.
+            </p>
+            <a href="/about" class="inline-flex items-center gap-2 mt-7 text-sm font-medium text-primary hover:gap-3 transition-all">
+                Learn more about us
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right h-4 w-4" aria-hidden="true">
                     <path d="M5 12h14"></path>
                     <path d="m12 5 7 7-7 7"></path>
-                </svg></a>
+                </svg>
+            </a>
         </div>
-        <div class="grid grid-cols-2 gap-4"><img src="/assets/project-dining-BwrzRfIk.jpg" alt="Dining room project" loading="lazy" class="rounded-2xl object-cover h-64 w-full hover-lift"><img src="/assets/project-bathroom-BG8yxYz6.jpg" alt="Bathroom project" loading="lazy" class="rounded-2xl object-cover h-64 w-full mt-10 hover-lift"></div>
+        <div class="grid grid-cols-2 gap-4">
+            <img src="/assets/images/project-dining.jpg" alt="Dining room project" loading="lazy" class="rounded-2xl object-cover h-64 w-full hover-lift">
+            <img src="/assets/images/project-bathroom.jpg" alt="Bathroom project" loading="lazy" class="rounded-2xl object-cover h-64 w-full mt-10 hover-lift">
+        </div>
     </div>
 </section>
+<!--Services section-->
 <section class="py-20 md:py-28 bg-muted/40">
     <div class="container-wide">
-        <div class="max-w-2xl mx-auto text-center"><span class="inline-block text-xs font-medium tracking-[0.2em] uppercase text-primary mb-3">What We Do</span>
-            <h2 class="font-display text-3xl md:text-4xl lg:text-5xl text-foreground leading-tight">Services tailored to every space</h2>
-            <p class="mt-4 text-base md:text-lg text-muted-foreground leading-relaxed">From a single room refresh to a full ground-up project, our offering covers every stage of the design process.</p>
+        <div class="max-w-2xl mx-auto text-center">
+            <span class="inline-block text-xs font-medium tracking-[0.2em] uppercase text-primary mb-3">
+                What We Do
+            </span>
+            <h2 class="font-display text-3xl md:text-4xl lg:text-5xl text-foreground leading-tight">
+                Services tailored to every space
+            </h2>
+            <p class="mt-4 text-base md:text-lg text-muted-foreground leading-relaxed">
+                From a single room refresh to a full ground-up project, our offering covers every stage of the design process.
+            </p>
         </div>
         <div class="mt-14 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             <div class="group bg-card rounded-2xl p-8 border border-border hover-lift">
-                <div class="grid h-12 w-12 place-items-center rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sofa h-6 w-6" aria-hidden="true">
+                <div class="grid h-12 w-12 place-items-center rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sofa h-6 w-6" aria-hidden="true">
                         <path d="M20 9V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v3"></path>
                         <path d="M2 16a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-5a2 2 0 0 0-4 0v1.5a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5V11a2 2 0 0 0-4 0z"></path>
                         <path d="M4 18v2"></path>
                         <path d="M20 18v2"></path>
                         <path d="M12 4v9"></path>
-                    </svg></div>
-                <h3 class="mt-5 font-display text-xl">Residential Design</h3>
-                <p class="mt-2 text-sm text-muted-foreground leading-relaxed">Homes that feel like you — warm, functional, and beautifully composed.</p>
+                    </svg>
+                </div>
+                <h3 class="mt-5 font-display text-xl">
+                    Residential Design
+                </h3>
+                <p class="mt-2 text-sm text-muted-foreground leading-relaxed">
+                    Homes that feel like you — warm, functional, and beautifully composed.
+                </p>
             </div>
             <div class="group bg-card rounded-2xl p-8 border border-border hover-lift">
-                <div class="grid h-12 w-12 place-items-center rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-building2 lucide-building-2 h-6 w-6" aria-hidden="true">
+                <div class="grid h-12 w-12 place-items-center rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-building2 lucide-building-2 h-6 w-6" aria-hidden="true">
                         <path d="M10 12h4"></path>
                         <path d="M10 8h4"></path>
                         <path d="M14 21v-3a2 2 0 0 0-4 0v3"></path>
                         <path d="M6 10H4a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-2"></path>
                         <path d="M6 21V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v16"></path>
-                    </svg></div>
-                <h3 class="mt-5 font-display text-xl">Commercial Spaces</h3>
-                <p class="mt-2 text-sm text-muted-foreground leading-relaxed">Workplaces and retail environments designed to inspire and perform.</p>
+                    </svg>
+                </div>
+                <h3 class="mt-5 font-display text-xl">
+                    Commercial Spaces
+                </h3>
+                <p class="mt-2 text-sm text-muted-foreground leading-relaxed">
+                    Workplaces and retail environments designed to inspire and perform.
+                </p>
             </div>
             <div class="group bg-card rounded-2xl p-8 border border-border hover-lift">
-                <div class="grid h-12 w-12 place-items-center rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-hammer h-6 w-6" aria-hidden="true">
+                <div class="grid h-12 w-12 place-items-center rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-hammer h-6 w-6" aria-hidden="true">
                         <path d="m15 12-9.373 9.373a1 1 0 0 1-3.001-3L12 9"></path>
                         <path d="m18 15 4-4"></path>
                         <path d="m21.5 11.5-1.914-1.914A2 2 0 0 1 19 8.172v-.344a2 2 0 0 0-.586-1.414l-1.657-1.657A6 6 0 0 0 12.516 3H9l1.243 1.243A6 6 0 0 1 12 8.485V10l2 2h1.172a2 2 0 0 1 1.414.586L18.5 14.5"></path>
-                    </svg></div>
-                <h3 class="mt-5 font-display text-xl">Renovation</h3>
-                <p class="mt-2 text-sm text-muted-foreground leading-relaxed">Thoughtful transformations that breathe new life into existing spaces.</p>
+                    </svg>
+                </div>
+                <h3 class="mt-5 font-display text-xl">
+                    Renovation
+                </h3>
+                <p class="mt-2 text-sm text-muted-foreground leading-relaxed">
+                    Thoughtful transformations that breathe new life into existing spaces.
+                </p>
             </div>
             <div class="group bg-card rounded-2xl p-8 border border-border hover-lift">
-                <div class="grid h-12 w-12 place-items-center rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-ruler h-6 w-6" aria-hidden="true">
+                <div class="grid h-12 w-12 place-items-center rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-ruler h-6 w-6" aria-hidden="true">
                         <path d="M21.3 15.3a2.4 2.4 0 0 1 0 3.4l-2.6 2.6a2.4 2.4 0 0 1-3.4 0L2.7 8.7a2.41 2.41 0 0 1 0-3.4l2.6-2.6a2.41 2.41 0 0 1 3.4 0Z"></path>
                         <path d="m14.5 12.5 2-2"></path>
                         <path d="m11.5 9.5 2-2"></path>
                         <path d="m8.5 6.5 2-2"></path>
                         <path d="m17.5 15.5 2-2"></path>
-                    </svg></div>
-                <h3 class="mt-5 font-display text-xl">Space Planning</h3>
-                <p class="mt-2 text-sm text-muted-foreground leading-relaxed">Layouts that maximize light, flow, and everyday usability.</p>
+                    </svg>
+                </div>
+                <h3 class="mt-5 font-display text-xl">
+                    Space Planning
+                </h3>
+                <p class="mt-2 text-sm text-muted-foreground leading-relaxed">
+                    Layouts that maximize light, flow, and everyday usability.
+                </p>
             </div>
             <div class="group bg-card rounded-2xl p-8 border border-border hover-lift">
-                <div class="grid h-12 w-12 place-items-center rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-lightbulb h-6 w-6" aria-hidden="true">
+                <div class="grid h-12 w-12 place-items-center rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-lightbulb h-6 w-6" aria-hidden="true">
                         <path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"></path>
                         <path d="M9 18h6"></path>
                         <path d="M10 22h4"></path>
-                    </svg></div>
-                <h3 class="mt-5 font-display text-xl">Lighting Design</h3>
-                <p class="mt-2 text-sm text-muted-foreground leading-relaxed">Layered lighting that shapes mood, comfort, and architectural drama.</p>
+                    </svg>
+                </div>
+                <h3 class="mt-5 font-display text-xl">
+                    Lighting Design
+                </h3>
+                <p class="mt-2 text-sm text-muted-foreground leading-relaxed">
+                    Layered lighting that shapes mood, comfort, and architectural drama.
+                </p>
             </div>
             <div class="group bg-card rounded-2xl p-8 border border-border hover-lift">
-                <div class="grid h-12 w-12 place-items-center rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles h-6 w-6" aria-hidden="true">
+                <div class="grid h-12 w-12 place-items-center rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles h-6 w-6" aria-hidden="true">
                         <path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"></path>
                         <path d="M20 2v4"></path>
                         <path d="M22 4h-4"></path>
                         <circle cx="4" cy="20" r="2"></circle>
-                    </svg></div>
-                <h3 class="mt-5 font-display text-xl">Styling &amp; Decor</h3>
-                <p class="mt-2 text-sm text-muted-foreground leading-relaxed">The finishing touches — textures, art, and objects that complete the story.</p>
+                    </svg>
+                </div>
+                <h3 class="mt-5 font-display text-xl">
+                    Styling & Decor
+                </h3>
+                <p class="mt-2 text-sm text-muted-foreground leading-relaxed">
+                    The finishing touches — textures, art, and objects that complete the story.
+                </p>
             </div>
         </div>
     </div>
 </section>
+<!--Projects section-->
 <section class="py-20 md:py-28">
     <div class="container-wide">
         <div class="flex flex-wrap items-end justify-between gap-6 mb-12">
