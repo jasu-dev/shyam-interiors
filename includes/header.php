@@ -27,22 +27,22 @@
                 </a>
                 <ul class="hidden lg:flex items-center gap-8">
                     <li>
-                        <a href="/" class="text-sm font-medium text-foreground/80 hover:text-primary transition-colors">Home</a>
+                        <a href="/index.php" class="text-sm font-medium text-foreground/80 hover:text-primary transition-colors">Home</a>
                     </li>
                     <li>
-                        <a href="/about" class="text-sm font-medium text-foreground/80 hover:text-primary transition-colors">About</a>
+                        <a href="/about.php" class="text-sm font-medium text-foreground/80 hover:text-primary transition-colors">About</a>
                     </li>
                     <li>
-                        <a href="/services" class="text-sm font-medium text-foreground/80 hover:text-primary transition-colors">Services</a>
+                        <a href="/services.php" class="text-sm font-medium text-foreground/80 hover:text-primary transition-colors">Services</a>
                     </li>
                     <li>
-                        <a href="/portfolio" class="text-sm font-medium text-foreground/80 hover:text-primary transition-colors">Portfolio</a>
+                        <a href="/portfolio.php" class="text-sm font-medium text-foreground/80 hover:text-primary transition-colors">Portfolio</a>
                     </li>
                     <li>
-                        <a href="/contact" class="text-sm font-medium text-foreground/80 hover:text-primary transition-colors">Contact</a>
+                        <a href="/contact.php" class="text-sm font-medium text-foreground/80 hover:text-primary transition-colors">Contact</a>
                     </li>
                 </ul>
-                <a href="/contact" class="hidden lg:inline-flex items-center rounded-full bg-primary px-5 py-2.5 text-sm font-medium text-primary-foreground hover:bg-primary/90 transition-all hover:shadow-[var(--shadow-card)]">
+                <a href="/contact.php" class="hidden lg:inline-flex items-center rounded-full bg-primary px-5 py-2.5 text-sm font-medium text-primary-foreground hover:bg-primary/90 transition-all hover:shadow-[var(--shadow-card)]">
                     Get a Quote
                 </a>
                 <!-- Hamburger button -->
@@ -63,22 +63,22 @@
                 class="lg:hidden overflow-hidden bg-background border-t border-border transition-[max-height,opacity] duration-300 max-h-0 opacity-0">
                 <ul class="container-wide flex flex-col py-4">
                     <li>
-                        <a href="/" class="nav-link block py-3 text-base font-medium text-foreground hover:text-primary transition-colors">Home</a>
+                        <a href="/index.php" class="nav-link block py-3 text-base font-medium text-foreground hover:text-primary transition-colors">Home</a>
                     </li>
                     <li>
-                        <a href="/about" class="nav-link block py-3 text-base font-medium text-foreground hover:text-primary transition-colors">About</a>
+                        <a href="/about.php" class="nav-link block py-3 text-base font-medium text-foreground hover:text-primary transition-colors">About</a>
                     </li>
                     <li>
-                        <a href="/services" class="nav-link block py-3 text-base font-medium text-foreground hover:text-primary transition-colors">Services</a>
+                        <a href="/services.php" class="nav-link block py-3 text-base font-medium text-foreground hover:text-primary transition-colors">Services</a>
                     </li>
                     <li>
-                        <a href="/portfolio" class="nav-link block py-3 text-base font-medium text-foreground hover:text-primary transition-colors">Portfolio</a>
+                        <a href="/portfolio.php" class="nav-link block py-3 text-base font-medium text-foreground hover:text-primary transition-colors">Portfolio</a>
                     </li>
                     <li>
-                        <a href="/contact" class="nav-link block py-3 text-base font-medium text-foreground hover:text-primary transition-colors">Contact</a>
+                        <a href="/contact.php" class="nav-link block py-3 text-base font-medium text-foreground hover:text-primary transition-colors">Contact</a>
                     </li>
                     <li class="pt-2">
-                        <a href="/contact" class="inline-flex w-full items-center justify-center rounded-full bg-primary px-5 py-3 text-sm font-medium text-primary-foreground">
+                        <a href="/contact.php" class="inline-flex w-full items-center justify-center rounded-full bg-primary px-5 py-3 text-sm font-medium text-primary-foreground">
                             Get a Quote
                         </a>
                     </li>

@@ -35,6 +35,7 @@
     --text-7xl: 4.5rem;
     --text-7xl--line-height: 1;
     --font-weight-medium: 500;
+    --font-weight-semibold: 600;
     --tracking-widest: 0.1em;
     --leading-tight: 1.25;
     --leading-relaxed: 1.625;
@@ -234,6 +235,9 @@
   .inset-x-0 {
     inset-inline: calc(var(--spacing) * 0);
   }
+  .end {
+    inset-inline-end: var(--spacing);
+  }
   .-top-3 {
     top: calc(var(--spacing) * -3);
   }
@@ -324,6 +328,9 @@
   .aspect-\[3\/4\] {
     aspect-ratio: 3/4;
   }
+  .h-1\.5 {
+    height: calc(var(--spacing) * 1.5);
+  }
   .h-4 {
     height: calc(var(--spacing) * 4);
   }
@@ -354,6 +361,9 @@
   .h-72 {
     height: calc(var(--spacing) * 72);
   }
+  .h-\[26rem\] {
+    height: 26rem;
+  }
   .h-\[28rem\] {
     height: 28rem;
   }
@@ -374,6 +384,9 @@
   }
   .min-h-screen {
     min-height: 100vh;
+  }
+  .w-1\.5 {
+    width: calc(var(--spacing) * 1.5);
   }
   .w-4 {
     width: calc(var(--spacing) * 4);
@@ -474,6 +487,9 @@
   .gap-8 {
     gap: calc(var(--spacing) * 8);
   }
+  .gap-10 {
+    gap: calc(var(--spacing) * 10);
+  }
   .gap-12 {
     gap: calc(var(--spacing) * 12);
   }
@@ -492,6 +508,13 @@
       --tw-space-y-reverse: 0;
       margin-block-start: calc(calc(var(--spacing) * 3) * var(--tw-space-y-reverse));
       margin-block-end: calc(calc(var(--spacing) * 3) * calc(1 - var(--tw-space-y-reverse)));
+    }
+  }
+  .space-y-24 {
+    :where(& > :not(:last-child)) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(calc(var(--spacing) * 24) * var(--tw-space-y-reverse));
+      margin-block-end: calc(calc(var(--spacing) * 24) * calc(1 - var(--tw-space-y-reverse)));
     }
   }
   .overflow-hidden {
@@ -809,6 +832,10 @@
     --tw-font-weight: var(--font-weight-medium);
     font-weight: var(--font-weight-medium);
   }
+  .font-semibold {
+    --tw-font-weight: var(--font-weight-semibold);
+    font-weight: var(--font-weight-semibold);
+  }
   .tracking-\[0\.2em\] {
     --tw-tracking: 0.2em;
     letter-spacing: 0.2em;
@@ -1017,6 +1044,16 @@
       }
     }
   }
+  .hover\:scale-105 {
+    &:hover {
+      @media (hover: hover) {
+        --tw-scale-x: 105%;
+        --tw-scale-y: 105%;
+        --tw-scale-z: 105%;
+        scale: var(--tw-scale-x) var(--tw-scale-y);
+      }
+    }
+  }
   .hover\:gap-3 {
     &:hover {
       @media (hover: hover) {
@@ -1220,6 +1257,11 @@
       grid-template-columns: repeat(4, minmax(0, 1fr));
     }
   }
+  .lg\:gap-16 {
+    @media (width >= 64rem) {
+      gap: calc(var(--spacing) * 16);
+    }
+  }
   .lg\:gap-20 {
     @media (width >= 64rem) {
       gap: calc(var(--spacing) * 20);
@@ -1241,6 +1283,13 @@
     @media (width >= 64rem) {
       font-size: var(--text-7xl);
       line-height: var(--tw-leading, var(--text-7xl--line-height));
+    }
+  }
+  .lg\:\[\&\>div\:first-child\]\:order-2 {
+    @media (width >= 64rem) {
+      &>div:first-child {
+        order: 2;
+      }
     }
   }
 }

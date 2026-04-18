@@ -4,7 +4,10 @@ include '../includes/header.php';
 <!--Hero section-->
 <section class="relative py-16 md:py-20 bg-secondary text-secondary-foreground overflow-hidden">
     <div class="absolute inset-0 opacity-30 pointer-events-none [background:radial-gradient(circle_at_top_right,var(--color-primary),transparent_55%)]"></div>
-    <div class="container-wide relative"><span class="inline-block text-xs font-medium tracking-[0.2em] uppercase text-primary mb-4">About Us</span>
+    <div class="container-wide relative">
+        <span class="inline-block text-xs font-medium tracking-[0.2em] uppercase text-primary mb-4">
+            About Us
+        </span>
         <h1 class="font-display text-4xl md:text-5xl lg:text-6xl max-w-3xl">
             A studio shaped by craft, calm, and curiosity.
         </h1>
