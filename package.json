@@ -1,0 +1,19 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx @tailwindcss/cli -i ./src/dev.css -o ./public/assets/css/style.css --watch",
+    "build": "npx @tailwindcss/cli -i ./src/dev.css -o ./public/assets/css/style.css --minify"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@tailwindcss/postcss": "^4.2.2",
+    "postcss": "^8.5.10",
+    "tailwindcss": "^4.2.2"
+  }
+}
