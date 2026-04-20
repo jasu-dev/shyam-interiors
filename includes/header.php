@@ -13,9 +13,16 @@
     <meta name="description" content="<?php echo $pageDescription ?? "Award-winning interior design studio crafting timeless residential and commercial spaces."; ?>">
     <meta property="og:image" content="<?php echo $pageImage ?? "/assets/images/hero-bg.webp"; ?>">
     <meta name="twitter:image" content="<?php echo $pageImage ?? "/assets/images/hero-bg.webp"; ?>">
-
     <link href="/assets/css/style.css" rel="stylesheet">
     <script src="/assets/js/menu.js" defer></script>
+    <?php
+    // Render all schemas defined by the page
+    if (!empty($schemas)) {
+        foreach ($schemas as $schema) {
+            render_schema($schema);
+        }
+    }
+    ?>
 </head>
 
 <body>

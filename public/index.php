@@ -1,8 +1,22 @@
 <?php
+require_once '../includes/config.php';
+require_once '../includes/schema.php';
+
 $activePage = 'home';
 $pageTitle = 'Shyam Interiors - Premium Interior Design Studio';
 $pageDescription = 'Shyam Interiors is a multidisciplinary design studio working across residential, commercial, and hospitality projects. We combine architectural rigor with a love for material, light, and craft — designing spaces that feel inevitable.';
 $pageImage = '/assets/images/hero-bg.webp';
+
+$schemas = [
+    schema_website(),
+    schema_webpage([
+        'name'        => $pageTitle,
+        'description' => $pageDescription,
+    ]),
+    schema_breadcrumb([
+        ['name' => 'Home', 'url' => SITE_URL],
+    ]),
+];
 
 include '../includes/header.php';
 include '../includes/portfolio_data.php';

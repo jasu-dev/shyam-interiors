@@ -1,8 +1,23 @@
 <?php
+require_once '../includes/config.php';
+require_once '../includes/schema.php';
+
 $activePage = 'about';
 $pageTitle = 'About — Shyam Interiors';
 $pageDescription = 'Meet the studio behind Shyam Interiors — our story, our team, and the values that shape every space we design.';
 $pageImage = '/assets/images/about-studio.jpg';
+
+$schemas = [
+    schema_website(),
+    schema_webpage([
+        'name'        => $pageTitle,
+        'description' => $pageDescription,
+    ]),
+    schema_breadcrumb([
+        ['name' => 'Home', 'url' => SITE_URL],
+        ['name' => 'About', 'url' => SITE_URL . '/about.php'],
+    ]),
+];
 
 include '../includes/header.php';
 ?>

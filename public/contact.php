@@ -1,8 +1,24 @@
 <?php
+
+require_once '../includes/config.php';
+require_once '../includes/schema.php';
+
 $activePage = 'contact';
 $pageTitle = 'Contact — Shyam Interiors';
 $pageDescription = 'Get in touch with Shyam Interiors for your interior design needs. We’d love to hear about your project.';
 $pageImage = '/assets/images/contact.jpg';
+
+$schemas = [
+    schema_website(),
+    schema_webpage([
+        'name'        => $pageTitle,
+        'description' => $pageDescription,
+    ]),
+    schema_breadcrumb([
+        ['name' => 'Home', 'url' => SITE_URL],
+        ['name' => 'Contact', 'url' => SITE_URL . '/contact.php'],
+    ]),
+];
 
 include '../includes/header.php';
 ?>

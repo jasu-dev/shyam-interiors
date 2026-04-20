@@ -1,9 +1,23 @@
 <?php
+require_once '../includes/config.php';
+require_once '../includes/schema.php';
+
 $activePage = 'portfolio';
 $pageTitle = 'Portfolio — Shyam Interiors';
 $pageDescription = 'A collection of spaces we’ve designed — homes, offices, and retail interiors that balance calm, function, and quiet character.';
 $pageImage = '/assets/images/portfolio.jpg';
 
+$schemas = [
+    schema_website(),
+    schema_webpage([
+        'name'        => $pageTitle,
+        'description' => $pageDescription,
+    ]),
+    schema_breadcrumb([
+        ['name' => 'Home', 'url' => SITE_URL],
+        ['name' => 'Portfolio', 'url' => SITE_URL . '/portfolio.php'],
+    ]),
+];
 include '../includes/header.php';
 include '../includes/portfolio_data.php';
 ?>
