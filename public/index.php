@@ -1,9 +1,10 @@
 <?php
 include '../includes/header.php';
+include '../includes/portfolio_data.php';
 ?>
 <!--Hero section-->
-<section class="relative flex items-center text-secondary-foreground overflow-hidden min-h-[90vh]">
-    <img src="/assets/images/hero-bg.jpg" alt="Modern luxury living room with floor-to-ceiling windows" class="absolute inset-0 h-full w-full object-cover">
+<section class="relative flex items-center text-secondary-foreground overflow-hidden md:min-h-[90vh]">
+    <img src="/assets/images/hero-bg.webp" alt="Modern luxury living room with floor-to-ceiling windows" class="absolute inset-0 h-full w-full object-cover">
     <div class="absolute inset-0 bg-gradient-to-r from-secondary/85 via-secondary/65 to-secondary/30"></div>
     <div class="container-wide relative py-20">
         <div class="max-w-2xl fade-in-up">
@@ -11,7 +12,7 @@ include '../includes/header.php';
                 Premium Interior Design Studio
             </span>
             <h1 class="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-[1.05] text-secondary-foreground">
-                Transform Your <span class="text-primary">Space</span>.<br>Elevate Your Story.
+                Transform Your Space.<br>Elevate Your Story.
             </h1>
             <p class="mt-6 text-base md:text-lg text-secondary-foreground/85 max-w-xl leading-relaxed">
                 We design timeless, considered interiors — for the way you actually live and work. From concept to keys, every detail is crafted with care.
@@ -202,24 +203,17 @@ include '../includes/header.php';
                 </svg></a>
         </div>
         <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-            <figure class="group relative overflow-hidden rounded-2xl"><img src="/assets/project-bedroom-DMquHQ1e.jpg" alt="Coastal Retreat Bedroom" loading="lazy" class="h-72 w-full object-cover transition-transform duration-700 group-hover:scale-105">
-                <figcaption class="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-6 text-secondary-foreground"><span class="text-xs uppercase tracking-widest text-primary mb-1">Residential</span><span class="font-display text-xl">Coastal Retreat Bedroom</span></figcaption>
+            <?php 
+            // Show only first 6 items on home page
+            $featured_items = array_slice($portfolio_items, 0, 6);
+            foreach ($featured_items as $item): 
+            ?>
+            <figure class="group relative overflow-hidden rounded-2xl">
+                <a href="/portfolio">
+                    <img src="/assets/images/portfolio/<?php echo $item['image']; ?>" alt="<?php echo $item['title']; ?>" loading="lazy" class="h-72 w-full object-cover transition-transform duration-700 group-hover:scale-105">
+                </a>
             </figure>
-            <figure class="group relative overflow-hidden rounded-2xl"><img src="/assets/project-kitchen-D6O1WbGS.jpg" alt="Marble &amp; Brass Kitchen" loading="lazy" class="h-72 w-full object-cover transition-transform duration-700 group-hover:scale-105">
-                <figcaption class="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-6 text-secondary-foreground"><span class="text-xs uppercase tracking-widest text-primary mb-1">Residential</span><span class="font-display text-xl">Marble &amp; Brass Kitchen</span></figcaption>
-            </figure>
-            <figure class="group relative overflow-hidden rounded-2xl"><img src="/assets/project-office-Bx_YdURM.jpg" alt="Glasshouse Workspace" loading="lazy" class="h-72 w-full object-cover transition-transform duration-700 group-hover:scale-105">
-                <figcaption class="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-6 text-secondary-foreground"><span class="text-xs uppercase tracking-widest text-primary mb-1">Commercial</span><span class="font-display text-xl">Glasshouse Workspace</span></figcaption>
-            </figure>
-            <figure class="group relative overflow-hidden rounded-2xl"><img src="/assets/project-bathroom-BG8yxYz6.jpg" alt="Spa-Inspired Bath" loading="lazy" class="h-72 w-full object-cover transition-transform duration-700 group-hover:scale-105">
-                <figcaption class="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-6 text-secondary-foreground"><span class="text-xs uppercase tracking-widest text-primary mb-1">Renovation</span><span class="font-display text-xl">Spa-Inspired Bath</span></figcaption>
-            </figure>
-            <figure class="group relative overflow-hidden rounded-2xl"><img src="/assets/project-dining-BwrzRfIk.jpg" alt="Atelier Dining Room" loading="lazy" class="h-72 w-full object-cover transition-transform duration-700 group-hover:scale-105">
-                <figcaption class="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-6 text-secondary-foreground"><span class="text-xs uppercase tracking-widest text-primary mb-1">Residential</span><span class="font-display text-xl">Atelier Dining Room</span></figcaption>
-            </figure>
-            <figure class="group relative overflow-hidden rounded-2xl"><img src="/assets/project-retail-mY9u6SEE.jpg" alt="Boutique Concept Store" loading="lazy" class="h-72 w-full object-cover transition-transform duration-700 group-hover:scale-105">
-                <figcaption class="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-6 text-secondary-foreground"><span class="text-xs uppercase tracking-widest text-primary mb-1">Commercial</span><span class="font-display text-xl">Boutique Concept Store</span></figcaption>
-            </figure>
+            <?php endforeach; ?>
         </div>
     </div>
 </section>
@@ -244,7 +238,7 @@ include '../includes/header.php';
                     </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star h-4 w-4 fill-current" aria-hidden="true">
                         <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
                     </svg></div>
-                <p class="text-foreground/85 leading-relaxed italic">"<!-- -->Shyam Interiors transformed our apartment into a calm, sophisticated home. Every detail was thought through.<!-- -->"</p>
+                <p class="text-foreground/85 leading-relaxed italic">"Shyam Interiors transformed our apartment into a calm, sophisticated home. Every detail was thought through."</p>
                 <div class="mt-6 pt-6 border-t border-border">
                     <div class="font-medium text-foreground">Anjali &amp; Rohan Mehta</div>
                     <div class="text-xs text-muted-foreground">Homeowners, Mumbai</div>

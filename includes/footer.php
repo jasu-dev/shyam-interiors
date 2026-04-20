@@ -1,7 +1,7 @@
 </main>
 <div class="bg-primary text-white px-4 py-10">
     <div class="container-wide grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div class="flex gap-3 justify-center items-center">
+        <div class="flex gap-3 md:justify-center items-center">
             <div class="flex items-center justify-center bg-white rounded-full w-10 h-10">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin h-4 w-4 text-primary" aria-hidden="true">
                     <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path>
@@ -10,7 +10,7 @@
             </div>
             <span>24 Design Avenue, Mumbai 400001</span>
         </div>
-        <div class="flex gap-3 justify-center items-center">
+        <div class="flex gap-3 md:justify-center items-center">
             <div class="flex items-center justify-center bg-white rounded-full w-10 h-10">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone h-4 w-4 text-primary" aria-hidden="true">
                     <path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path>
@@ -18,7 +18,7 @@
             </div>
             <span>+91 98765 43210</span>
         </div>
-        <div class="flex gap-3 justify-center items-center">
+        <div class="flex gap-3 md:justify-center items-center">
             <div class="flex items-center justify-center bg-white rounded-full w-10 h-10">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail h-4 w-4 text-primary" aria-hidden="true">
                     <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>

@@ -124,66 +124,6 @@ include '../includes/header.php';
         </div>
     </div>
 </section>
-<!-- our team section -->
-<section class="py-20 md:py-28 bg-muted/40">
-    <div class="container-wide">
-        <div class="max-w-2xl mx-auto text-center">
-            <span class="inline-block text-xs font-medium tracking-[0.2em] uppercase text-primary mb-3">
-                Our Team
-            </span>
-            <h2 class="font-display text-3xl md:text-4xl lg:text-5xl text-foreground leading-tight">
-                The people behind the work
-            </h2>
-        </div>
-        <div class="mt-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            <figure class="group">
-                <div class="overflow-hidden rounded-2xl aspect-[3/4]">
-                    <img alt="Shyam Verma" loading="lazy" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&amp;fit=crop&amp;w=600&amp;q=80">
-                </div>
-                <figcaption class="mt-4">
-                    <div class="font-display text-lg">Shyam Verma</div>
-                    <div class="text-sm text-muted-foreground">Founder &amp; Principal Designer</div>
-                </figcaption>
-            </figure>
-            <figure class="group">
-                <div class="overflow-hidden rounded-2xl aspect-[3/4]">
-                    <img alt="Aanya Kapoor" loading="lazy" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&amp;fit=crop&amp;w=600&amp;q=80">
-                </div>
-                <figcaption class="mt-4">
-                    <div class="font-display text-lg">Aanya Kapoor</div>
-                    <div class="text-sm text-muted-foreground">Senior Interior Architect</div>
-                </figcaption>
-            </figure>
-            <figure class="group">
-                <div class="overflow-hidden rounded-2xl aspect-[3/4]">
-                    <img alt="Devansh Roy" loading="lazy" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&amp;fit=crop&amp;w=600&amp;q=80">
-                </div>
-                <figcaption class="mt-4">
-                    <div class="font-display text-lg">Devansh Roy</div>
-                    <div class="text-sm text-muted-foreground">Project Lead</div>
-                </figcaption>
-            </figure>
-            <figure class="group">
-                <div class="overflow-hidden rounded-2xl aspect-[3/4]">
-                    <img alt="Meera Joshi" loading="lazy" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&amp;fit=crop&amp;w=600&amp;q=80">
-                </div>
-                <figcaption class="mt-4">
-                    <div class="font-display text-lg">Meera Joshi</div>
-                    <div class="text-sm text-muted-foreground">Stylist &amp; Curator</div>
-                </figcaption>
-            </figure>
-        </div>
-        <div class="text-center mt-16">
-            <a href="/contact" class="inline-flex items-center gap-2 rounded-full bg-primary px-7 py-3.5 text-sm font-medium text-primary-foreground hover:bg-primary/90 transition-all">
-                <span>Work with us</span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right h-4 w-4" aria-hidden="true">
-                    <path d="M5 12h14"></path>
-                    <path d="m12 5 7 7-7 7"></path>
-                </svg>
-            </a>
-        </div>
-    </div>
-</section>
 <?php
 include '../includes/footer.php';
 ?>
