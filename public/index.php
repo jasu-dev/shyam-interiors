@@ -76,6 +76,32 @@ include '../includes/portfolio_data.php';
         </div>
     </div>
 </section>
+<!--Video section-->
+<section class="py-20 md:py-28 overflow-hidden">
+    <div class="container-wide grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <div class="relative">
+            <div class="absolute -inset-4 bg-primary/5 rounded-[2.5rem] -rotate-2"></div>
+            <video src="/assets/work-video.mp4" autoplay loop muted playsinline class="relative rounded-3xl w-full h-[400px] object-cover shadow-2xl hover-lift"></video>
+            <div class="absolute -bottom-6 -right-6 h-24 w-24 bg-primary/10 rounded-full blur-2xl"></div>
+        </div>
+        <div>
+            <span class="text-xs font-medium tracking-[0.2em] uppercase text-primary">In Motion</span>
+            <h2 class="font-display text-3xl md:text-4xl lg:text-5xl mt-3 leading-tight">
+                Crafting spaces with precision and passion.
+            </h2>
+            <p class="mt-6 text-muted-foreground leading-relaxed max-w-lg">
+                From initial concepts to the final installation, our team ensures every detail reflects our commitment to excellence and your vision. Watch how we bring our designs to life.
+            </p>
+            <a href="/about" class="inline-flex items-center gap-2 mt-8 text-sm font-medium text-primary hover:gap-3 transition-all">
+                Explore Our Story
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right h-4 w-4" aria-hidden="true">
+                    <path d="M5 12h14"></path>
+                    <path d="m12 5 7 7-7 7"></path>
+                </svg>
+            </a>
+        </div>
+    </div>
+</section>
 <!--Services section-->
 <section class="py-20 md:py-28 bg-muted/40">
     <div class="container-wide">
