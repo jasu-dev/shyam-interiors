@@ -59,7 +59,7 @@
     <div class="border-t border-secondary-foreground/10">
         <div class="container-wide py-6 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-secondary-foreground/60">
             <p>© 2026 Shyam Interiors. All rights reserved.</p>
-            <p>Designed with care · Crafted to inspire.</p>
+            <p>Designed by <a href="https://tejaldigital.in" target="_blank" class="hover:underline">Tejal Digital</a></p>
         </div>
     </div>
 </footer>
