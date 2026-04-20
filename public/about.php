@@ -1,4 +1,9 @@
 <?php
+$activePage = 'about';
+$pageTitle = 'About — Shyam Interiors';
+$pageDescription = 'Meet the studio behind Shyam Interiors — our story, our team, and the values that shape every space we design.';
+$pageImage = '/assets/images/about-studio.jpg';
+
 include '../includes/header.php';
 ?>
 <!--Hero section-->

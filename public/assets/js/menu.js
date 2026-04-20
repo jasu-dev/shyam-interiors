@@ -32,13 +32,4 @@
   mobileMenu.querySelectorAll("a").forEach((link) => {
     link.addEventListener("click", closeMenu);
   });
-
-  // ── Active link highlight ───────────────────────────────────────
-  const currentPath = window.location.pathname;
-  document.querySelectorAll(".nav-link").forEach((link) => {
-    const href = link.getAttribute("href");
-    const isActive =
-      href === "/" ? currentPath === "/" : currentPath.startsWith(href);
-    if (isActive) link.classList.add("text-primary");
-  });
 })();

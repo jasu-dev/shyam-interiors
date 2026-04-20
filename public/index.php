@@ -1,4 +1,9 @@
 <?php
+$activePage = 'home';
+$pageTitle = 'Shyam Interiors - Premium Interior Design Studio';
+$pageDescription = 'Shyam Interiors is a multidisciplinary design studio working across residential, commercial, and hospitality projects. We combine architectural rigor with a love for material, light, and craft — designing spaces that feel inevitable.';
+$pageImage = '/assets/images/hero-bg.webp';
+
 include '../includes/header.php';
 include '../includes/portfolio_data.php';
 ?>
@@ -18,14 +23,14 @@ include '../includes/portfolio_data.php';
                 We design timeless, considered interiors — for the way you actually live and work. From concept to keys, every detail is crafted with care.
             </p>
             <div class="mt-8 flex flex-wrap gap-3">
-                <a href="/contact" class="inline-flex items-center gap-2 rounded-full bg-primary px-7 py-3.5 text-sm font-medium text-primary-foreground hover:bg-primary/90 transition-all hover:shadow-[var(--shadow-elegant)] hover:-translate-y-0.5">
+                <a href="/contact.php" class="inline-flex items-center gap-2 rounded-full bg-primary px-7 py-3.5 text-sm font-medium text-primary-foreground hover:bg-primary/90 transition-all hover:shadow-[var(--shadow-elegant)] hover:-translate-y-0.5">
                     Start Your Project
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right h-4 w-4" aria-hidden="true">
                         <path d="M5 12h14"></path>
                         <path d="m12 5 7 7-7 7"></path>
                     </svg>
                 </a>
-                <a href="/portfolio" class="inline-flex items-center gap-2 rounded-full border border-secondary-foreground/30 backdrop-blur bg-secondary-foreground/5 px-7 py-3.5 text-sm font-medium text-secondary-foreground hover:bg-secondary-foreground/15 transition-all">
+                <a href="/portfolio.php" class="inline-flex items-center gap-2 rounded-full border border-secondary-foreground/30 backdrop-blur bg-secondary-foreground/5 px-7 py-3.5 text-sm font-medium text-secondary-foreground hover:bg-secondary-foreground/15 transition-all">
                     View Portfolio
                 </a>
             </div>
@@ -36,7 +41,7 @@ include '../includes/portfolio_data.php';
         <div class="container-wide pb-8">
             <div class="grid grid-cols-3 gap-px bg-secondary-foreground/15 rounded-2xl overflow-hidden backdrop-blur-md border border-secondary-foreground/15">
                 <div class="bg-secondary/70 px-6 py-5 text-center">
-                    <div class="font-display text-2xl md:text-3xl text-primary">12+</div>
+                    <div class="font-display text-2xl md:text-3xl text-primary">3+</div>
                     <div class="text-xs uppercase tracking-widest text-secondary-foreground/70 mt-1">Years of Craft</div>
                 </div>
                 <div class="bg-secondary/70 px-6 py-5 text-center">
@@ -62,7 +67,7 @@ include '../includes/portfolio_data.php';
             <p class="mt-5 text-muted-foreground leading-relaxed">
                 Shyam Interiors is a multidisciplinary design studio working across residential, commercial, and hospitality projects. We combine architectural rigor with a love for material, light, and craft — designing spaces that feel inevitable.
             </p>
-            <a href="/about" class="inline-flex items-center gap-2 mt-7 text-sm font-medium text-primary hover:gap-3 transition-all">
+            <a href="/about.php" class="inline-flex items-center gap-2 mt-7 text-sm font-medium text-primary hover:gap-3 transition-all">
                 Learn more about us
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right h-4 w-4" aria-hidden="true">
                     <path d="M5 12h14"></path>
@@ -81,7 +86,7 @@ include '../includes/portfolio_data.php';
     <div class="container-wide grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
         <div class="relative">
             <div class="absolute -inset-4 bg-primary/5 rounded-[2.5rem] -rotate-2"></div>
-            <video src="/assets/work-video.mp4" autoplay loop muted playsinline class="relative rounded-3xl w-full h-[400px] object-cover shadow-2xl hover-lift"></video>
+            <video src="/assets/work-video.mp4" loading="lazy" autoplay loop muted playsinline class="relative rounded-3xl w-full h-[400px] object-cover shadow-2xl hover-lift"></video>
             <div class="absolute -bottom-6 -right-6 h-24 w-24 bg-primary/10 rounded-full blur-2xl"></div>
         </div>
         <div>
@@ -92,13 +97,12 @@ include '../includes/portfolio_data.php';
             <p class="mt-6 text-muted-foreground leading-relaxed max-w-lg">
                 From initial concepts to the final installation, our team ensures every detail reflects our commitment to excellence and your vision. Watch how we bring our designs to life.
             </p>
-            <a href="/about" class="inline-flex items-center gap-2 mt-8 text-sm font-medium text-primary hover:gap-3 transition-all">
-                Explore Our Story
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right h-4 w-4" aria-hidden="true">
-                    <path d="M5 12h14"></path>
-                    <path d="m12 5 7 7-7 7"></path>
-                </svg>
-            </a>
+            <a href="tel:+916377170420" class="inline-flex items-center gap-2 mt-8 rounded-full bg-primary px-8 py-3.5 text-sm font-medium text-primary-foreground hover:bg-primary/90 transition-all hover:shadow-[var(--shadow-elegant)]">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone h-4 w-4 mr-2" aria-hidden="true">
+                        <path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path>
+                    </svg>
+                    <span>Get a Quote</span>
+                </a>
         </div>
     </div>
 </section>
@@ -221,16 +225,24 @@ include '../includes/portfolio_data.php';
 <section class="py-20 md:py-28">
     <div class="container-wide">
         <div class="flex flex-wrap items-end justify-between gap-6 mb-12">
-            <div class="max-w-xl"><span class="text-xs font-medium tracking-[0.2em] uppercase text-primary">Featured Work</span>
-                <h2 class="font-display text-3xl md:text-4xl lg:text-5xl mt-3 leading-tight">Selected projects</h2>
-            </div><a href="/portfolio" class="inline-flex items-center gap-2 text-sm font-medium text-primary hover:gap-3 transition-all">View all projects <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right h-4 w-4" aria-hidden="true">
+            <div class="max-w-xl">
+                <span class="text-xs font-medium tracking-[0.2em] uppercase text-primary">
+                    Featured Work
+                </span>
+                <h2 class="font-display text-3xl md:text-4xl lg:text-5xl mt-3 leading-tight">
+                    Selected projects
+                </h2>
+            </div>
+            <a href="/portfolio" class="inline-flex items-center gap-2 text-sm font-medium text-primary hover:gap-3 transition-all">
+                <span>View all projects</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right h-4 w-4" aria-hidden="true">
                     <path d="M5 12h14"></path>
                     <path d="m12 5 7 7-7 7"></path>
-                </svg></a>
+                </svg>
+            </a>
         </div>
         <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
             <?php 
-            // Show only first 6 items on home page
             $featured_items = array_slice($portfolio_items, 0, 6);
             foreach ($featured_items as $item): 
             ?>
@@ -245,68 +257,100 @@ include '../includes/portfolio_data.php';
 </section>
 <section class="py-20 md:py-28 bg-muted/40">
     <div class="container-wide">
-        <div class="max-w-2xl mx-auto text-center"><span class="inline-block text-xs font-medium tracking-[0.2em] uppercase text-primary mb-3">Kind Words</span>
-            <h2 class="font-display text-3xl md:text-4xl lg:text-5xl text-foreground leading-tight">What our clients say</h2>
+        <div class="max-w-2xl mx-auto text-center">
+            <span class="inline-block text-xs font-medium tracking-[0.2em] uppercase text-primary mb-3">
+                Kind Words
+            </span>
+            <h2 class="font-display text-3xl md:text-4xl lg:text-5xl text-foreground leading-tight">
+                What our clients say
+            </h2>
         </div>
         <div class="mt-14 grid md:grid-cols-3 gap-6">
-            <div class="bg-card rounded-2xl p-8 border border-border relative hover-lift"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-quote absolute -top-3 left-6 h-8 w-8 text-primary bg-card p-1 rounded" aria-hidden="true">
+            <div class="bg-card rounded-2xl p-8 border border-border relative hover-lift">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-quote absolute -top-3 left-6 h-8 w-8 text-primary bg-card p-1 rounded" aria-hidden="true">
                     <path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path>
                     <path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path>
                 </svg>
-                <div class="flex gap-1 text-primary mb-4"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star h-4 w-4 fill-current" aria-hidden="true">
+                <div class="flex gap-1 text-primary mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star h-4 w-4 fill-current" aria-hidden="true">
                         <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
-                    </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star h-4 w-4 fill-current" aria-hidden="true">
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star h-4 w-4 fill-current" aria-hidden="true">
                         <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
-                    </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star h-4 w-4 fill-current" aria-hidden="true">
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star h-4 w-4 fill-current" aria-hidden="true">
                         <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
-                    </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star h-4 w-4 fill-current" aria-hidden="true">
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star h-4 w-4 fill-current" aria-hidden="true">
                         <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
-                    </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star h-4 w-4 fill-current" aria-hidden="true">
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star h-4 w-4 fill-current" aria-hidden="true">
                         <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
-                    </svg></div>
-                <p class="text-foreground/85 leading-relaxed italic">"Shyam Interiors transformed our apartment into a calm, sophisticated home. Every detail was thought through."</p>
+                    </svg>
+                </div>
+                <p class="text-foreground/85 leading-relaxed italic">
+                    "Shyam Interiors transformed our apartment into a calm, sophisticated home. Every detail was thought through."
+                </p>
                 <div class="mt-6 pt-6 border-t border-border">
-                    <div class="font-medium text-foreground">Anjali &amp; Rohan Mehta</div>
-                    <div class="text-xs text-muted-foreground">Homeowners, Mumbai</div>
+                    <div class="font-medium text-foreground">Anjali & Rohan Mehta</div>
+                    <div class="text-xs text-muted-foreground">Homeowners, Bengaluru</div>
                 </div>
             </div>
-            <div class="bg-card rounded-2xl p-8 border border-border relative hover-lift"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-quote absolute -top-3 left-6 h-8 w-8 text-primary bg-card p-1 rounded" aria-hidden="true">
+            <div class="bg-card rounded-2xl p-8 border border-border relative hover-lift">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-quote absolute -top-3 left-6 h-8 w-8 text-primary bg-card p-1 rounded" aria-hidden="true">
                     <path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path>
                     <path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path>
                 </svg>
-                <div class="flex gap-1 text-primary mb-4"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star h-4 w-4 fill-current" aria-hidden="true">
+                <div class="flex gap-1 text-primary mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star h-4 w-4 fill-current" aria-hidden="true">
                         <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
-                    </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star h-4 w-4 fill-current" aria-hidden="true">
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star h-4 w-4 fill-current" aria-hidden="true">
                         <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
-                    </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star h-4 w-4 fill-current" aria-hidden="true">
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star h-4 w-4 fill-current" aria-hidden="true">
                         <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
-                    </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star h-4 w-4 fill-current" aria-hidden="true">
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star h-4 w-4 fill-current" aria-hidden="true">
                         <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
-                    </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star h-4 w-4 fill-current" aria-hidden="true">
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star h-4 w-4 fill-current" aria-hidden="true">
                         <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
-                    </svg></div>
-                <p class="text-foreground/85 leading-relaxed italic">"<!-- -->Our office became a place the team actually loves. Beautiful, functional, and on time.<!-- -->"</p>
+                    </svg>
+                </div>
+                <p class="text-foreground/85 leading-relaxed italic">
+                    "Our office became a place the team actually loves. Beautiful, functional, and on time."
+                </p>
                 <div class="mt-6 pt-6 border-t border-border">
                     <div class="font-medium text-foreground">Karan Shah</div>
-                    <div class="text-xs text-muted-foreground">Founder, Lumen Studios</div>
+                    <div class="text-xs text-muted-foreground">Dommasandra, Bengaluru</div>
                 </div>
             </div>
-            <div class="bg-card rounded-2xl p-8 border border-border relative hover-lift"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-quote absolute -top-3 left-6 h-8 w-8 text-primary bg-card p-1 rounded" aria-hidden="true">
+            <div class="bg-card rounded-2xl p-8 border border-border relative hover-lift">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-quote absolute -top-3 left-6 h-8 w-8 text-primary bg-card p-1 rounded" aria-hidden="true">
                     <path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path>
                     <path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path>
                 </svg>
-                <div class="flex gap-1 text-primary mb-4"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star h-4 w-4 fill-current" aria-hidden="true">
+                <div class="flex gap-1 text-primary mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star h-4 w-4 fill-current" aria-hidden="true">
                         <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
-                    </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star h-4 w-4 fill-current" aria-hidden="true">
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star h-4 w-4 fill-current" aria-hidden="true">
                         <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
-                    </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star h-4 w-4 fill-current" aria-hidden="true">
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star h-4 w-4 fill-current" aria-hidden="true">
                         <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
-                    </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star h-4 w-4 fill-current" aria-hidden="true">
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star h-4 w-4 fill-current" aria-hidden="true">
                         <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
-                    </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star h-4 w-4 fill-current" aria-hidden="true">
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star h-4 w-4 fill-current" aria-hidden="true">
                         <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
-                    </svg></div>
-                <p class="text-foreground/85 leading-relaxed italic">"<!-- -->From the first sketch to the last lamp — pure craft. Guests constantly compliment the space.<!-- -->"</p>
+                    </svg>
+                </div>
+                <p class="text-foreground/85 leading-relaxed italic">
+                    "From the first sketch to the last lamp — pure craft. Guests constantly compliment the space."
+                </p>
                 <div class="mt-6 pt-6 border-t border-border">
                     <div class="font-medium text-foreground">Priya Iyer</div>
                     <div class="text-xs text-muted-foreground">Restaurateur</div>
@@ -320,11 +364,18 @@ include '../includes/portfolio_data.php';
         <div class="relative overflow-hidden rounded-3xl bg-secondary text-secondary-foreground p-10 md:p-16 text-center">
             <div class="absolute inset-0 opacity-30 [background:radial-gradient(circle_at_30%_20%,var(--color-primary),transparent_55%)]"></div>
             <div class="relative max-w-2xl mx-auto">
-                <h2 class="font-display text-3xl md:text-5xl leading-tight">Ready to create something beautiful?</h2>
-                <p class="mt-4 text-secondary-foreground/80">Tell us about your space — we'll send a thoughtful response within 48 hours.</p><a href="/contact" class="inline-flex items-center gap-2 mt-8 rounded-full bg-primary px-8 py-3.5 text-sm font-medium text-primary-foreground hover:bg-primary/90 transition-all hover:shadow-[var(--shadow-elegant)]">Book a Consultation <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right h-4 w-4" aria-hidden="true">
-                        <path d="M5 12h14"></path>
-                        <path d="m12 5 7 7-7 7"></path>
-                    </svg></a>
+                <h2 class="font-display text-3xl md:text-5xl leading-tight">
+                    Ready to create something beautiful?
+                </h2>
+                <p class="mt-4 text-secondary-foreground/80">
+                    Tell us about your space — we'll send a thoughtful response within 48 hours.
+                </p>
+                <a href="tel:+916377170420" class="inline-flex items-center gap-2 mt-8 rounded-full bg-primary px-8 py-3.5 text-sm font-medium text-primary-foreground hover:bg-primary/90 transition-all hover:shadow-[var(--shadow-elegant)]">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone h-4 w-4 mr-2" aria-hidden="true">
+                        <path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path>
+                    </svg>
+                    <span>Get a Quote</span>
+                </a>
             </div>
         </div>
     </div>

@@ -1,4 +1,9 @@
 <?php
+$activePage = 'portfolio';
+$pageTitle = 'Portfolio — Shyam Interiors';
+$pageDescription = 'A collection of spaces we’ve designed — homes, offices, and retail interiors that balance calm, function, and quiet character.';
+$pageImage = '/assets/images/portfolio.jpg';
+
 include '../includes/header.php';
 include '../includes/portfolio_data.php';
 ?>

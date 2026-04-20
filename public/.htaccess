@@ -1,0 +1,40 @@
+Options -Indexes
+RewriteEngine On
+
+# -----------------------------------------------
+# Remove .php extension from URLs
+# -----------------------------------------------
+
+# Skip rule for excluded DIRECTORY (e.g., /core)
+RewriteCond %{REQUEST_URI} ^/core [NC]
+RewriteRule ^ - [L]
+
+# Skip rule for excluded FILE (e.g., config)
+RewriteCond %{REQUEST_URI} ^/config [NC]
+RewriteRule ^ - [L]
+
+# If the request is not an existing file or directory
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Internally rewrite /page → /page.php
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+# -----------------------------------------------
+# Redirect: Remove .php from URL if someone types it
+# -----------------------------------------------
+RewriteCond %{THE_REQUEST} ^[A-Z]+\ /([^/]+\.php) [NC]
+RewriteCond %{REQUEST_URI} !^/core [NC]
+RewriteRule ^(.+)\.php$ /$1 [R=301,L]
+
+# -----------------------------------------------
+# 1. HTTP → HTTPS redirect
+# -----------------------------------------------
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+# -----------------------------------------------
+# 2. WWW → Non-WWW redirect
+# -----------------------------------------------
+RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+RewriteRule ^ https://%1%{REQUEST_URI} [R=301,L]

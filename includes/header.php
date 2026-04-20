@@ -11,8 +11,8 @@
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="description" content="<?php echo $pageDescription ?? "Award-winning interior design studio crafting timeless residential and commercial spaces."; ?>">
-    <meta property="og:image" content="<?php echo $pageImage ?? "/assets/images/hero-bg.jpg"; ?>">
-    <meta name="twitter:image" content="<?php echo $pageImage ?? "/assets/images/hero-bg.jpg"; ?>">
+    <meta property="og:image" content="<?php echo $pageImage ?? "/assets/images/hero-bg.webp"; ?>">
+    <meta name="twitter:image" content="<?php echo $pageImage ?? "/assets/images/hero-bg.webp"; ?>">
 
     <link href="/assets/css/style.css" rel="stylesheet">
     <script src="/assets/js/menu.js" defer></script>
@@ -27,19 +27,19 @@
                 </a>
                 <ul class="hidden lg:flex items-center gap-8">
                     <li>
-                        <a href="/index.php" class="text-sm font-medium text-foreground/80 hover:text-primary transition-colors">Home</a>
+                        <a href="/index.php" class="text-sm font-medium text-foreground/80 hover:text-primary transition-colors <?php echo $activePage == 'home' ? 'text-primary' : ''; ?>">Home</a>
                     </li>
                     <li>
-                        <a href="/about.php" class="text-sm font-medium text-foreground/80 hover:text-primary transition-colors">About</a>
+                        <a href="/about.php" class="text-sm font-medium text-foreground/80 hover:text-primary transition-colors <?php echo $activePage == 'about' ? 'text-primary' : ''; ?>">About</a>
                     </li>
                     <li>
-                        <a href="/services.php" class="text-sm font-medium text-foreground/80 hover:text-primary transition-colors">Services</a>
+                        <a href="/services.php" class="text-sm font-medium text-foreground/80 hover:text-primary transition-colors <?php echo $activePage == 'services' ? 'text-primary' : ''; ?>">Services</a>
                     </li>
                     <li>
-                        <a href="/portfolio.php" class="text-sm font-medium text-foreground/80 hover:text-primary transition-colors">Portfolio</a>
+                        <a href="/portfolio.php" class="text-sm font-medium text-foreground/80 hover:text-primary transition-colors <?php echo $activePage == 'portfolio' ? 'text-primary' : ''; ?>">Portfolio</a>
                     </li>
                     <li>
-                        <a href="/contact.php" class="text-sm font-medium text-foreground/80 hover:text-primary transition-colors">Contact</a>
+                        <a href="/contact.php" class="text-sm font-medium text-foreground/80 hover:text-primary transition-colors <?php echo $activePage == 'contact' ? 'text-primary' : ''; ?>">Contact</a>
                     </li>
                 </ul>
                 <a href="/contact.php" class="hidden lg:inline-flex items-center rounded-full bg-primary px-5 py-2.5 text-sm font-medium text-primary-foreground hover:bg-primary/90 transition-all hover:shadow-[var(--shadow-card)]">
