@@ -54,7 +54,7 @@ function schema_article(array $data = []): array
             'name'  => SITE_NAME,
             'logo'  => [
                 '@type' => 'ImageObject',
-                'url'   => SITE_URL . '/images/logo.png',
+                'url'   => SITE_URL . '/assets/images/logo-main.svg',
             ],
         ],
         'datePublished'   => $data['datePublished']  ?? date('Y-m-d'),
