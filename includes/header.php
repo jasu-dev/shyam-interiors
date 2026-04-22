@@ -4,9 +4,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title><?php echo $pageTitle ?? "Shyam Interiors — Transform Your Space"; ?></title>
-    <meta name="author" content="Shyam Interiors">
-    <meta property="og:title" content="<?php echo $pageTitle ?? "Shyam Interiors — Premium Interior Design Studio"; ?>">
+    <title><?php echo $pageTitle ?? "ST Interiors — Transform Your Space"; ?></title>
+    <meta name="author" content="ST Interiors">
+    <meta property="og:title" content="<?php echo $pageTitle ?? "ST Interiors — Premium Interior Design Studio"; ?>">
     <meta property="og:description" content="<?php echo $pageDescription ?? "Modern, luxurious residential and commercial interior design."; ?>">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
@@ -30,7 +30,7 @@
         <header class="fixed inset-x-0 top-0 z-50 transition-all duration-300 bg-background/85 backdrop-blur-md border-b border-border">
             <nav class="container-wide flex h-20 items-center justify-between">
                 <a class="flex items-center gap-2 group active" href="/">
-                    <img src="/assets/images/main-logo.svg" alt="Shyam Interiors" class="h-10 w-auto">
+                    <img src="/assets/images/logo-main.svg" alt="ST Interiors" class="h-10 w-auto">
                 </a>
                 <ul class="hidden lg:flex items-center gap-8">
                     <li>

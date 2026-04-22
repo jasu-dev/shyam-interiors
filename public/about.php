@@ -3,8 +3,8 @@ require_once '../includes/config.php';
 require_once '../includes/schema.php';
 
 $activePage = 'about';
-$pageTitle = 'About — Shyam Interiors';
-$pageDescription = 'Meet the studio behind Shyam Interiors — our story, our team, and the values that shape every space we design.';
+$pageTitle = 'About — ST Interiors';
+$pageDescription = 'Meet the studio behind ST Interiors — our story, our team, and the values that shape every space we design.';
 $pageImage = '/assets/images/about-studio.jpg';
 
 $schemas = [
@@ -48,7 +48,7 @@ include '../includes/header.php';
                 From a single sketch to a city-spanning practice.
             </h2>
             <p class="mt-5 text-muted-foreground leading-relaxed">
-                Shyam Interiors began in 2012 with a simple belief: that great design improves the way we live. What started as a one-person practice has grown into a tight-knit studio of architects, designers, and craftspeople — but our approach hasn't changed.
+                ST Interiors began in 2012 with a simple belief: that great design improves the way we live. What started as a one-person practice has grown into a tight-knit studio of architects, designers, and craftspeople — but our approach hasn't changed.
             </p>
             <p class="mt-4 text-muted-foreground leading-relaxed">
                 We listen first. We sketch by hand. We obsess over the joinery. And we deliver spaces that feel personal, considered, and quietly luxurious.

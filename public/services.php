@@ -3,7 +3,7 @@ require_once '../includes/config.php';
 require_once '../includes/schema.php';
 
 $activePage = 'services';
-$pageTitle = 'Services — Shyam Interiors';
+$pageTitle = 'Services — ST Interiors';
 $pageDescription = 'Residential, commercial, renovation, and styling services. Explore our complete interior design offering.';
 $pageImage = '/assets/images/services.jpg';
 

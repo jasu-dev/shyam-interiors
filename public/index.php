@@ -3,8 +3,8 @@ require_once '../includes/config.php';
 require_once '../includes/schema.php';
 
 $activePage = 'home';
-$pageTitle = 'Shyam Interiors - Premium Interior Design Studio';
-$pageDescription = 'Shyam Interiors is a multidisciplinary design studio working across residential, commercial, and hospitality projects. We combine architectural rigor with a love for material, light, and craft — designing spaces that feel inevitable.';
+$pageTitle = 'ST Interiors - Premium Interior Design Studio';
+$pageDescription = 'A multidisciplinary design studio working across residential, commercial, and hospitality projects. We combine architectural rigor with a love for material, light, and craft — designing spaces that feel inevitable.';
 $pageImage = '/assets/images/hero-bg.webp';
 
 $schemas = [
@@ -79,7 +79,7 @@ include '../includes/portfolio_data.php';
                 A studio devoted to interiors that age beautifully.
             </h2>
             <p class="mt-5 text-muted-foreground leading-relaxed">
-                Shyam Interiors is a multidisciplinary design studio working across residential, commercial, and hospitality projects. We combine architectural rigor with a love for material, light, and craft — designing spaces that feel inevitable.
+                ST Interiors is a multidisciplinary design studio working across residential, commercial, and hospitality projects. We combine architectural rigor with a love for material, light, and craft — designing spaces that feel inevitable.
             </p>
             <a href="/about.php" class="inline-flex items-center gap-2 mt-7 text-sm font-medium text-primary hover:gap-3 transition-all">
                 Learn more about us
@@ -303,7 +303,7 @@ include '../includes/portfolio_data.php';
                     </svg>
                 </div>
                 <p class="text-foreground/85 leading-relaxed italic">
-                    "Shyam Interiors transformed our apartment into a calm, sophisticated home. Every detail was thought through."
+                    "ST Interiors transformed our apartment into a calm, sophisticated home. Every detail was thought through."
                 </p>
                 <div class="mt-6 pt-6 border-t border-border">
                     <div class="font-medium text-foreground">Anjali & Rohan Mehta</div>

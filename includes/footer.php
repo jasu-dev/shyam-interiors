@@ -36,7 +36,7 @@
     <div class="container-wide py-16">
         <div class="flex flex-col justify-center items-center gap-6">
             <div class="flex items-center gap-2 mb-4">
-                <img src="/assets/images/logo-white.svg" alt="Shyam Interiors" class="h-25 w-auto">
+                <img src="/assets/images/logo-white.svg" alt="ST Interiors" class="h-25 w-auto">
             </div>
             <p class="max-w-md text-center text-sm text-secondary-foreground/70 leading-relaxed">
                 Crafting timeless, functional, and beautiful interiors that reflect who you are.
@@ -58,7 +58,7 @@
     </div>
     <div class="border-t border-secondary-foreground/10">
         <div class="container-wide py-6 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-secondary-foreground/60">
-            <p>© 2026 Shyam Interiors. All rights reserved.</p>
+            <p>© 2026 ST Interiors. All rights reserved.</p>
             <p>Designed by <a href="https://tejaldigital.in" target="_blank" class="hover:underline">Tejal Digital</a></p>
         </div>
     </div>

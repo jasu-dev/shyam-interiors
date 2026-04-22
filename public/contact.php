@@ -4,8 +4,8 @@ require_once '../includes/config.php';
 require_once '../includes/schema.php';
 
 $activePage = 'contact';
-$pageTitle = 'Contact — Shyam Interiors';
-$pageDescription = 'Get in touch with Shyam Interiors for your interior design needs. We’d love to hear about your project.';
+$pageTitle = 'Contact — ST Interiors';
+$pageDescription = 'Get in touch with ST Interiors for your interior design needs. We’d love to hear about your project.';
 $pageImage = '/assets/images/contact.jpg';
 
 $schemas = [
@@ -104,7 +104,7 @@ include '../includes/header.php';
                         <span class="absolute bottom-0 right-0 w-3 h-3 bg-[#25D366] border-2 border-[#075e54] rounded-full animate-pulse"></span>
                     </div>
                     <div>
-                        <h3 class="font-display font-medium">Shyam Interiors</h3>
+                        <h3 class="font-display font-medium">ST Interiors</h3>
                         <p class="text-[10px] opacity-80 uppercase tracking-widest">Typically responds in minutes</p>
                     </div>
                 </div>
@@ -112,7 +112,7 @@ include '../includes/header.php';
                 <!-- Chat Messages -->
                 <div class="flex-1 p-6 space-y-4 overflow-y-auto bg-[#e5ddd5]/40" style="background-image: url('https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png'); background-repeat: repeat; background-size: 400px;">
                     <div class="bg-white p-4 rounded-2xl rounded-tl-none shadow-sm max-w-[85%] text-sm relative border border-border/50">
-                        <p class="text-foreground/80 leading-relaxed font-medium mb-1">Office of Shyam Interiors</p>
+                        <p class="text-foreground/80 leading-relaxed font-medium mb-1">Office of ST Interiors</p>
                         <p class="text-foreground/70 leading-relaxed">Hi there! 👋 How can we help you transform your space today? Send us a message below and we'll chat on WhatsApp.</p>
                         <span class="text-[10px] text-muted-foreground mt-1 block text-right">Online</span>
                     </div>
