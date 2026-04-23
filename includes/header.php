@@ -68,24 +68,22 @@
                 </button>
             </nav>
             <!-- Mobile menu -->
-            <div
-                id="mobile-menu"
-                class="lg:hidden overflow-hidden bg-background border-t border-border transition-[max-height,opacity] duration-300 max-h-0 opacity-0">
+            <div id="mobile-menu" class="lg:hidden overflow-hidden bg-background border-t border-border transition-[max-height,opacity] duration-300 max-h-0 opacity-0">
                 <ul class="container-wide flex flex-col py-4">
                     <li>
-                        <a href="/index.php" class="nav-link block py-3 text-base font-medium text-foreground hover:text-primary transition-colors">Home</a>
+                        <a href="/index.php" class="nav-link block py-3 text-base font-medium text-foreground hover:text-primary transition-colors <?php echo $activePage == 'home' ? 'text-primary' : ''; ?>">Home</a>
                     </li>
                     <li>
-                        <a href="/about.php" class="nav-link block py-3 text-base font-medium text-foreground hover:text-primary transition-colors">About</a>
+                        <a href="/about.php" class="nav-link block py-3 text-base font-medium text-foreground hover:text-primary transition-colors <?php echo $activePage == 'about' ? 'text-primary' : ''; ?>">About</a>
                     </li>
                     <li>
-                        <a href="/services.php" class="nav-link block py-3 text-base font-medium text-foreground hover:text-primary transition-colors">Services</a>
+                        <a href="/services.php" class="nav-link block py-3 text-base font-medium text-foreground hover:text-primary transition-colors <?php echo $activePage == 'services' ? 'text-primary' : ''; ?>">Services</a>
                     </li>
                     <li>
-                        <a href="/portfolio.php" class="nav-link block py-3 text-base font-medium text-foreground hover:text-primary transition-colors">Portfolio</a>
+                        <a href="/portfolio.php" class="nav-link block py-3 text-base font-medium text-foreground hover:text-primary transition-colors <?php echo $activePage == 'portfolio' ? 'text-primary' : ''; ?>">Portfolio</a>
                     </li>
                     <li>
-                        <a href="/contact.php" class="nav-link block py-3 text-base font-medium text-foreground hover:text-primary transition-colors">Contact</a>
+                        <a href="/contact.php" class="nav-link block py-3 text-base font-medium text-foreground hover:text-primary transition-colors <?php echo $activePage == 'contact' ? 'text-primary' : ''; ?>">Contact</a>
                     </li>
                     <li class="pt-2">
                         <a href="/contact.php" class="inline-flex w-full items-center justify-center rounded-full bg-primary px-5 py-3 text-sm font-medium text-primary-foreground">
