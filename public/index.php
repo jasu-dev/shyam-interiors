@@ -23,7 +23,7 @@ include '../includes/portfolio_data.php';
 ?>
 <!--Hero section-->
 <section class="relative flex items-center text-secondary-foreground overflow-hidden md:min-h-[90vh]">
-    <img src="/assets/images/hero-bg.webp" alt="Modern luxury living room with floor-to-ceiling windows" class="absolute inset-0 h-full w-full object-cover">
+    <img src="/assets/images/hero-bg.webp" fetchpriority="high" alt="Modern luxury living room with floor-to-ceiling windows" class="absolute inset-0 h-full w-full object-cover">
     <div class="absolute inset-0 bg-gradient-to-r from-secondary/85 via-secondary/65 to-secondary/30"></div>
     <div class="container-wide relative py-20">
         <div class="max-w-2xl fade-in-up">
