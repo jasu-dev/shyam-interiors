@@ -34,6 +34,22 @@
         </div>
     </div>
 </div>
+<section class="py-12 border-t border-border bg-white/50">
+    <div class="container-wide">
+        <div class="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-10">
+            <h2 class="text-xs font-bold tracking-[0.3em] uppercase text-primary/70 whitespace-nowrap">Areas We Serve</h2>
+            <div class="h-px w-12 bg-border hidden md:block"></div>
+            <div class="flex flex-wrap justify-center gap-x-8 gap-y-4 text-sm font-medium text-foreground/80">
+                <span class="hover:text-primary transition-colors cursor-default">Dommasandra</span>
+                <span class="hover:text-primary transition-colors cursor-default">Sarjapur Road</span>
+                <span class="hover:text-primary transition-colors cursor-default">Gunjur</span>
+                <span class="hover:text-primary transition-colors cursor-default">Varthur</span>
+                <span class="hover:text-primary transition-colors cursor-default">Muthanallur</span>
+                <span class="hover:text-primary transition-colors cursor-default">Carmelaram</span>
+            </div>
+        </div>
+    </div>
+</section>
 <footer class="bg-secondary text-secondary-foreground">
     <div class="container-wide py-16">
         <div class="flex flex-col justify-center items-center gap-6">

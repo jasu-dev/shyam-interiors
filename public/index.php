@@ -3,8 +3,8 @@ require_once '../includes/config.php';
 require_once '../includes/schema.php';
 
 $activePage = 'home';
-$pageTitle = 'ST Interiors - Premium Interior Design Studio';
-$pageDescription = 'A multidisciplinary design studio working across residential, commercial, and hospitality projects. We combine architectural rigor with a love for material, light, and craft — designing spaces that feel inevitable.';
+$pageTitle = 'ST Interiors | Best Interior Designer in Dommasandra, Bengaluru';
+$pageDescription = 'Looking for expert interior designers in Dommasandra, Bengaluru? ST Interiors offers modern, affordable home & office interiors with customized designs. Book a free consultation today!';
 $pageImage = '/assets/images/hero-bg.webp';
 
 $schemas = [
@@ -28,13 +28,13 @@ include '../includes/portfolio_data.php';
     <div class="container-wide relative py-20">
         <div class="max-w-2xl fade-in-up">
             <span class="inline-block text-xs font-medium tracking-[0.25em] uppercase text-primary-foreground/90 bg-primary/80 backdrop-blur px-4 py-1.5 rounded-full mb-6">
-                Premium Interior Design Studio
+                Premium Interior Designer
             </span>
-            <h1 class="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-[1.05] text-secondary-foreground">
-                Transform Your Space.<br>Elevate Your Story.
+            <h1 class="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-[1.05] text-secondary-foreground">
+                Best Interior Designer in <br>Dommasandra, Bengaluru
             </h1>
             <p class="mt-6 text-base md:text-lg text-secondary-foreground/85 max-w-xl leading-relaxed">
-                We design timeless, considered interiors — for the way you actually live and work. From concept to keys, every detail is crafted with care.
+                From luxury modular kitchens to complete home interiors, ST Interiors brings world-class design to Dommasandra and Sarjapur Road.
             </p>
             <div class="mt-8 flex flex-wrap gap-3">
                 <a href="/contact.php" class="inline-flex items-center gap-2 rounded-full bg-primary px-7 py-3.5 text-sm font-medium text-primary-foreground hover:bg-primary/90 transition-all hover:shadow-[var(--shadow-elegant)] hover:-translate-y-0.5">
@@ -106,17 +106,20 @@ include '../includes/portfolio_data.php';
         <div>
             <span class="text-xs font-medium tracking-[0.2em] uppercase text-primary">In Motion</span>
             <h2 class="font-display text-3xl md:text-4xl lg:text-5xl mt-3 leading-tight">
-                Crafting spaces with precision and passion.
+                Why Choose ST Interiors in Dommasandra?
             </h2>
-            <p class="mt-6 text-muted-foreground leading-relaxed max-w-lg">
-                From initial concepts to the final installation, our team ensures every detail reflects our commitment to excellence and your vision. Watch how we bring our designs to life.
-            </p>
+            <ul class="mt-6 text-muted-foreground leading-relaxed max-w-lg list-disc ml-4">
+                <li>Local expertise in Bengaluru homes</li>
+                <li>Affordable pricing</li>
+                <li>End-to-end execution</li>
+                <li>On-time delivery</li>
+            </ul>
             <a href="tel:+916377170420" class="inline-flex items-center gap-2 mt-8 rounded-full bg-primary px-8 py-3.5 text-sm font-medium text-primary-foreground hover:bg-primary/90 transition-all hover:shadow-[var(--shadow-elegant)]">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone h-4 w-4 mr-2" aria-hidden="true">
-                        <path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path>
-                    </svg>
-                    <span>Get a Quote</span>
-                </a>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone h-4 w-4 mr-2" aria-hidden="true">
+                    <path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path>
+                </svg>
+                <span>Get a Quote</span>
+            </a>
         </div>
     </div>
 </section>
@@ -128,10 +131,10 @@ include '../includes/portfolio_data.php';
                 What We Do
             </span>
             <h2 class="font-display text-3xl md:text-4xl lg:text-5xl text-foreground leading-tight">
-                Services tailored to every space
+                Interior Design Services in Dommasandra, Bengaluru
             </h2>
             <p class="mt-4 text-base md:text-lg text-muted-foreground leading-relaxed">
-                From a single room refresh to a full ground-up project, our offering covers every stage of the design process.
+                We offer complete home and commercial interior design solutions tailored to modern lifestyles in Dommasandra and nearby areas.
             </p>
         </div>
         <div class="mt-14 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -235,18 +238,63 @@ include '../includes/portfolio_data.php';
         </div>
     </div>
 </section>
+<!-- CTA Section -->
+<section class="py-16 md:py-20 bg-primary text-primary-foreground relative overflow-hidden">
+    <div class="absolute inset-0 opacity-10">
+        <svg class="h-full w-full" viewBox="0 0 100 100" preserveAspectRatio="none" fill="currentColor">
+            <path d="M0 100 C 20 0 50 0 100 100 Z"></path>
+        </svg>
+    </div>
+    <div class="container-wide relative">
+        <div class="flex flex-col lg:flex-row items-center justify-between gap-10">
+            <div class="max-w-2xl text-center lg:text-left">
+                <h2 class="font-display text-3xl md:text-4xl lg:text-5xl leading-tight">
+                    Ready to Transform Your Space in Dommasandra?
+                </h2>
+                <p class="mt-4 text-primary-foreground/90 text-lg md:text-xl">
+                    Get a expert consultation from Bengaluru's leading interior design team. We're just a call away.
+                </p>
+            </div>
+            <div class="flex flex-col sm:flex-row gap-5 items-center">
+                <a href="tel:+916377170420" class="inline-flex items-center gap-3 rounded-full bg-white px-8 py-4 text-base md:text-lg font-bold text-primary hover:bg-white/95 transition-all hover:scale-105 shadow-2xl group">
+                    <div class="grid h-10 w-10 place-items-center rounded-full bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone h-5 w-5">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                        </svg>
+                    </div>
+                    <span>Call Now: +91 6377170420</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
 <!--Projects section-->
 <section class="py-20 md:py-28">
     <div class="container-wide">
-        <div class="flex flex-wrap items-end justify-between gap-6 mb-12">
-            <div class="max-w-xl">
-                <span class="text-xs font-medium tracking-[0.2em] uppercase text-primary">
-                    Featured Work
-                </span>
-                <h2 class="font-display text-3xl md:text-4xl lg:text-5xl mt-3 leading-tight">
-                    Selected projects
-                </h2>
-            </div>
+        <div class="max-w-2xl mx-auto text-center mb-14">
+            <span class="text-xs font-medium tracking-[0.2em] uppercase text-primary">
+                Featured Work
+            </span>
+            <h2 class="font-display text-3xl md:text-4xl lg:text-5xl text-foreground leading-tight">
+                Our Interior Design Projects in Dommasandra & Bengaluru
+            </h2>
+            <p class="mt-4 text-base md:text-lg text-muted-foreground leading-relaxed">
+                Explore our completed home interiors near Sarjapur Road, Whitefield, and Electronic City.
+            </p>
+        </div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            <?php
+            $featured_items = array_slice($portfolio_items, 0, 6);
+            foreach ($featured_items as $item):
+            ?>
+                <figure class="group relative overflow-hidden rounded-2xl">
+                    <a href="/portfolio">
+                        <img src="/assets/images/portfolio/<?php echo $item['image']; ?>" alt="<?php echo $item['title']; ?>" loading="lazy" class="h-72 w-full object-cover transition-transform duration-700 group-hover:scale-105">
+                    </a>
+                </figure>
+            <?php endforeach; ?>
+        </div>
+        <div class="mt-10 text-center">
             <a href="/portfolio" class="inline-flex items-center gap-2 text-sm font-medium text-primary hover:gap-3 transition-all">
                 <span>View all projects</span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right h-4 w-4" aria-hidden="true">
@@ -254,18 +302,6 @@ include '../includes/portfolio_data.php';
                     <path d="m12 5 7 7-7 7"></path>
                 </svg>
             </a>
-        </div>
-        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-            <?php 
-            $featured_items = array_slice($portfolio_items, 0, 6);
-            foreach ($featured_items as $item): 
-            ?>
-            <figure class="group relative overflow-hidden rounded-2xl">
-                <a href="/portfolio">
-                    <img src="/assets/images/portfolio/<?php echo $item['image']; ?>" alt="<?php echo $item['title']; ?>" loading="lazy" class="h-72 w-full object-cover transition-transform duration-700 group-hover:scale-105">
-                </a>
-            </figure>
-            <?php endforeach; ?>
         </div>
     </div>
 </section>
@@ -379,16 +415,16 @@ include '../includes/portfolio_data.php';
             <div class="absolute inset-0 opacity-30 [background:radial-gradient(circle_at_30%_20%,var(--color-primary),transparent_55%)]"></div>
             <div class="relative max-w-2xl mx-auto">
                 <h2 class="font-display text-3xl md:text-5xl leading-tight">
-                    Ready to create something beautiful?
+                    Looking for Interior Designers in Bengaluru?
                 </h2>
                 <p class="mt-4 text-secondary-foreground/80">
-                    Tell us about your space — we'll send a thoughtful response within 48 hours.
+                    Book a Free Site Visit Today with ST Interiors
                 </p>
                 <a href="tel:+916377170420" class="inline-flex items-center gap-2 mt-8 rounded-full bg-primary px-8 py-3.5 text-sm font-medium text-primary-foreground hover:bg-primary/90 transition-all hover:shadow-[var(--shadow-elegant)]">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone h-4 w-4 mr-2" aria-hidden="true">
                         <path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path>
                     </svg>
-                    <span>Get a Quote</span>
+                    <span>Book a Free Site Visit</span>
                 </a>
             </div>
         </div>
