@@ -17,7 +17,7 @@
     <meta property="og:image" content="<?php echo $pageImage ?? "/assets/images/hero-bg.webp"; ?>">
     <meta name="twitter:image" content="<?php echo $pageImage ?? "/assets/images/hero-bg.webp"; ?>">
     <link href="/assets/css/style.css" rel="stylesheet">
-    <script src="/assets/js/menu.js" defer></script>
+    <script src="/assets/js/menu.js" defer></script><meta name="google-site-verification" content="hhdk9WzRFwxuWGQypwKiIZzuDeX7TGBmK30wHonxJmo" />
     <?php
     // Render all schemas defined by the page
     if (!empty($schemas)) {
