@@ -9,6 +9,9 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
     <meta name="author" content="ST Interiors">
+    <?php if ($canonicalUrl) { ?>
+        <link rel="canonical" href="<?php echo $canonicalUrl; ?>" />
+    <?php } ?>
     <meta property="og:title" content="<?php echo $pageTitle ?? "ST Interiors — Premium Interior Design Studio"; ?>">
     <meta property="og:description" content="<?php echo $pageDescription ?? "Modern, luxurious residential and commercial interior design."; ?>">
     <meta property="og:type" content="website">
@@ -17,7 +20,8 @@
     <meta property="og:image" content="<?php echo $pageImage ?? "/assets/images/hero-bg.webp"; ?>">
     <meta name="twitter:image" content="<?php echo $pageImage ?? "/assets/images/hero-bg.webp"; ?>">
     <link href="/assets/css/style.css" rel="stylesheet">
-    <script src="/assets/js/menu.js" defer></script><meta name="google-site-verification" content="hhdk9WzRFwxuWGQypwKiIZzuDeX7TGBmK30wHonxJmo" />
+    <script src="/assets/js/menu.js" defer></script>
+    <meta name="google-site-verification" content="hhdk9WzRFwxuWGQypwKiIZzuDeX7TGBmK30wHonxJmo" />
     <?php
     // Render all schemas defined by the page
     if (!empty($schemas)) {
@@ -37,7 +41,7 @@
                 </a>
                 <ul class="hidden lg:flex items-center gap-8">
                     <li>
-                        <a href="/index.php" class="text-sm font-medium text-foreground/80 hover:text-primary transition-colors <?php echo $activePage == 'home' ? 'text-primary' : ''; ?>">Home</a>
+                        <a href="/" class="text-sm font-medium text-foreground/80 hover:text-primary transition-colors <?php echo $activePage == 'home' ? 'text-primary' : ''; ?>">Home</a>
                     </li>
                     <li>
                         <a href="/about.php" class="text-sm font-medium text-foreground/80 hover:text-primary transition-colors <?php echo $activePage == 'about' ? 'text-primary' : ''; ?>">About</a>
@@ -71,7 +75,7 @@
             <div id="mobile-menu" class="lg:hidden overflow-hidden bg-background border-t border-border transition-[max-height,opacity] duration-300 max-h-0 opacity-0">
                 <ul class="container-wide flex flex-col py-4">
                     <li>
-                        <a href="/index.php" class="nav-link block py-3 text-base font-medium text-foreground hover:text-primary transition-colors <?php echo $activePage == 'home' ? 'text-primary' : ''; ?>">Home</a>
+                        <a href="/" class="nav-link block py-3 text-base font-medium text-foreground hover:text-primary transition-colors <?php echo $activePage == 'home' ? 'text-primary' : ''; ?>">Home</a>
                     </li>
                     <li>
                         <a href="/about.php" class="nav-link block py-3 text-base font-medium text-foreground hover:text-primary transition-colors <?php echo $activePage == 'about' ? 'text-primary' : ''; ?>">About</a>

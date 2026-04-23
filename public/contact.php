@@ -7,7 +7,7 @@ $activePage = 'contact';
 $pageTitle = 'Contact — ST Interiors';
 $pageDescription = 'Get in touch with ST Interiors for your interior design needs. We’d love to hear about your project.';
 $pageImage = '/assets/images/contact.jpg';
-
+$canonicalUrl = SITE_URL . '/contact';
 $schemas = [
     schema_website(),
     schema_webpage([
@@ -16,7 +16,7 @@ $schemas = [
     ]),
     schema_breadcrumb([
         ['name' => 'Home', 'url' => SITE_URL],
-        ['name' => 'Contact', 'url' => SITE_URL . '/contact.php'],
+        ['name' => 'Contact', 'url' => SITE_URL . '/contact'],
     ]),
 ];
 

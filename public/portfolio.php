@@ -6,7 +6,7 @@ $activePage = 'portfolio';
 $pageTitle = 'Portfolio — ST Interiors';
 $pageDescription = 'A collection of spaces we’ve designed — homes, offices, and retail interiors that balance calm, function, and quiet character.';
 $pageImage = '/assets/images/portfolio.jpg';
-
+$canonicalUrl = SITE_URL . '/portfolio';
 $schemas = [
     schema_website(),
     schema_webpage([
@@ -15,7 +15,7 @@ $schemas = [
     ]),
     schema_breadcrumb([
         ['name' => 'Home', 'url' => SITE_URL],
-        ['name' => 'Portfolio', 'url' => SITE_URL . '/portfolio.php'],
+        ['name' => 'Portfolio', 'url' => SITE_URL . '/portfolio'],
     ]),
 ];
 include '../includes/header.php';

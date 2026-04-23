@@ -6,7 +6,7 @@ $activePage = 'services';
 $pageTitle = 'Services — ST Interiors';
 $pageDescription = 'Residential, commercial, renovation, and styling services. Explore our complete interior design offering.';
 $pageImage = '/assets/images/services.jpg';
-
+$canonicalUrl = SITE_URL . '/services';
 $schemas = [
     schema_website(),
     schema_webpage([
@@ -15,7 +15,7 @@ $schemas = [
     ]),
     schema_breadcrumb([
         ['name' => 'Home', 'url' => SITE_URL],
-        ['name' => 'Services', 'url' => SITE_URL . '/services.php'],
+        ['name' => 'Services', 'url' => SITE_URL . '/services'],
     ]),
 ];
 

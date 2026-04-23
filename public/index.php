@@ -6,7 +6,7 @@ $activePage = 'home';
 $pageTitle = 'ST Interiors | Best Interior Designer in Dommasandra, Bengaluru';
 $pageDescription = 'Looking for expert interior designers in Dommasandra, Bengaluru? ST Interiors offers modern, affordable home & office interiors with customized designs. Book a free consultation today!';
 $pageImage = '/assets/images/hero-bg.webp';
-
+$canonicalUrl = SITE_URL;
 $schemas = [
     schema_website(),
     schema_webpage([

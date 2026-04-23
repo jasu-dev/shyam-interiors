@@ -6,7 +6,7 @@ $activePage = 'about';
 $pageTitle = 'About — ST Interiors';
 $pageDescription = 'Meet the studio behind ST Interiors — our story, our team, and the values that shape every space we design.';
 $pageImage = '/assets/images/about-studio.jpg';
-
+$canonicalUrl = SITE_URL . '/about';
 $schemas = [
     schema_website(),
     schema_webpage([
@@ -15,7 +15,7 @@ $schemas = [
     ]),
     schema_breadcrumb([
         ['name' => 'Home', 'url' => SITE_URL],
-        ['name' => 'About', 'url' => SITE_URL . '/about.php'],
+        ['name' => 'About', 'url' => SITE_URL . '/about'],
     ]),
 ];
 
